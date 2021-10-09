@@ -1,0 +1,147 @@
+.btn{
+    display: inline-block;
+    text-align: center;
+    padding: 0.25em 0.75em;
+    font-size: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25em;
+    text-decoration: none;
+    transition: color 1s ease, background-color 1s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+.btn-primary:hover{
+    background-color: var(--color-primary-darker);
+    color: white;
+}
+.btn-secondary{
+    background-color: var(--color-secondary);
+    color: white;
+}
+.btn-secondary:hover{
+    background-color: var(--color-secondary-darker);
+    color: white;
+}
+.btn-success{
+    background-color: var(--color-success);
+    color: white;
+}
+.btn-success:hover{
+    background-color: var(--color-success-darker);
+    color: white;
+}
+.btn-info{
+    background-color: var(--color-info);
+    color: white;
+}
+.btn-info:hover{
+    background-color: var(--color-info-darker);
+    color: white;
+}
+.btn-warning{
+    background-color: var(--color-warning);
+    color: white;
+}
+.btn-warning:hover{
+    background-color: var(--color-warning-darker);
+    color: white;
+}
+.btn-danger{
+    background-color: var(--color-danger);
+    color: white;
+}
+.btn-danger:hover{
+    background-color: var(--color-danger-darker);
+    color: white;
+}
+.btn-light{
+    background-color: var(--color-light);
+    color: rgb(83, 83, 83);
+}
+.btn-light:hover{
+    background-color: var(--color-light-darker);
+    color: rgb(83, 83, 83);
+}
+.btn-dark{
+    background-color: var(--color-dark);
+    color: white;
+}
+.btn-dark:hover{
+    background-color: var(--color-dark-darker);
+    color: white;
+}
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.table th,
+.table td{
+    padding: 0.5em;
+    border-top: 1px solid var(--border-color);
+}
+
+.table-primary{
+    background-color: var(--color-primary-pastel);
+}
+.table-primary th{
+    background-color: var(--color-primary);
+    color: white;
+}
+.table-secondary{
+    background-color: var(--color-secondary-pastel);
+}
+.table-secondary th{
+    background-color: var(--color-secondary);
+}
+.table-success{
+    background-color: var(--color-success-pastel);
+}
+.table-success th{
+    background-color: var(--color-success);
+    color: white;
+}
+.table-info{
+    background-color: var(--color-info-pastel);
+}
+.table-info th{
+    background-color: var(--color-info);
+    color: white;
+}
+.table-warning{
+    background-color: var(--color-warning-pastel);
+}
+.table-warning th{
+    background-color: var(--color-warning);
+    color: white;
+}
+.table-danger{
+    background-color: var(--color-danger-pastel);
+}
+.table-danger th{
+    background-color: var(--color-danger);
+    color: white;
+}
+.table-light{
+    background-color: var(--color-light);
+}
+.table-light th{
+    background-color: var(--color-light-darker);
+}
+.table-dark{
+    color: white;
+    background-color: var(--color-dark);
+}
+.table-dark th{
+    color: white;
+    background-color: var(--color-dark-darker);
+}
