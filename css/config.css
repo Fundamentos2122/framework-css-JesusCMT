@@ -29,4 +29,5 @@ html, body{ margin: 0px; }
     --color-info-pastel: #78ccda;
     --color-warning-pastel: #fde8a7;
     --color-danger-pastel: #e59ba3;
+    --container-padding: 1em;
 }
