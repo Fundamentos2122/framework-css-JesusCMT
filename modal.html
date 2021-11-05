@@ -8,17 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="modal">
+    <div class="modal" id="modal-test">
         <div class="modal-content bg-success">
             <div class="modal-header">
                 <h5>Encabezado</h5>
-                <button>x</button>
+                <button data-dismiss = "#modal-test">x</button>
             </div>
             <div class="modal-body">
                 Cuerpo
             </div>
             <div class="modal-footer">
-                <button class="btn btn-primary">Close</button>
+                <button class="btn btn-primary" data-dismiss = "#modal-test">Close</button>
                 <button class="btn btn-secondary">Save changes</button>
             </div>
         </div>
@@ -26,5 +26,11 @@
     <div class="bg-primary">
         Hola mundo
     </div>
+
+    <button class="btn btn-success" data-toggle="modal" data-target="#modal-test"> Abrir Modal </button>
+
+    <button class="btn btn-success" data-toggle="modal" data-target="#otro-modal"> Abrir Modal </button>
+
+    <script src="js/framework.js"></script>
 </body>
 </html>

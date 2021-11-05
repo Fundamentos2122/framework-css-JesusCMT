@@ -156,6 +156,7 @@
     background-color: rgba(58, 58, 58, 0.411);
     -ms-overflow-style: none;
     scrollbar-width: none;
+    display: none;
 }
 
 .modal::-webkit-scrollbar{
@@ -199,21 +200,34 @@
 
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--color-light);
+    padding: 1em;
 }
 
 .navbar-brand{
     display: inline-block;
-    padding: 1em;
+    padding: 1em 0.5em;
     text-decoration: none;
     color: var(--color-dark);
     font-weight: 600;
     font-size: 1.25em;
 }
 
+.navbar-toggle{
+    padding: 0.5em;
+    height: fit-content;
+}
+
+.navbar-collapse{
+    display: none;
+    flex-basis: 100%;
+}
+
 .navbar-nav{
-    display: flex;
+    display: block;
 }
 
 .navbar-nav .nav-item{
@@ -244,6 +258,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: none;
 }
 .dropdown-menu .dropdown-item{
     color: var(--color-dark);
@@ -258,4 +273,23 @@
 
 .show{
     display: block;
+}
+
+@media (min-width: 768px) {
+    .navbar-toggle{
+        display: none;
+    }
+
+    .navbar-nav{
+        display: flex;
+    }
+
+    .navbar-collapse{
+        display: block;
+        flex-basis: auto;
+    }
+
+    .dropdown-menu{
+        position: absolute;
+    }
 }
