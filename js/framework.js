@@ -5,11 +5,11 @@ const attr_dismiss = "data-dismiss";
 const class_modal = "modal";
 
 const dropdown_class = "dropdown";
-const dropdown_toggle = "dropdown_toggle";
+const dropdown_toggle = "dropdown-toggle";
 const dropdown_menu_class = "dropdown-menu";
 
-const navbar_toggle = "nabvar-toggle";
-const menu_collapse_class = "nabvar-collapse";
+const navbar_toggle = "navbar-toggle";
+const menu_collapse_class = "navbar-collapse";
 
 const class_show = "show";
 
@@ -32,14 +32,14 @@ document.addEventListener("DOMContentLoaded", function(){
     let dropdown_buttons =  document.querySelectorAll(`.${dropdown_class} > .${dropdown_toggle}`);
 
     dropdown_buttons.forEach(element =>{
-        element.addEventListener("click", ToggleDropdown());
+        element.addEventListener("click", ToggleDropdown);
     });
 
     //Collapse del menú
     let collapse_menu_buttons =  document.querySelectorAll(`.${navbar_toggle}`);
 
     collapse_menu_buttons.forEach(element =>{
-        element.addEventListener("click", ToggleMenu());
+        element.addEventListener("click", ToggleMenu);
     });
 });
 
@@ -82,7 +82,7 @@ function OpenModal(e){
 function ToggleDropdown(e){
     e.preventDefault();
 
-    console.log("Submenú");
+    // console.log("Submenú");
     let submenu = e.target.parentNode.querySelector(`.${dropdown_menu_class}`);
 
     submenu.classList.toggle(class_show);
@@ -96,7 +96,7 @@ function ToggleDropdown(e){
     e.preventDefault();
 
     console.log("Menu");
-    let submenu = e.target.parentNode.querySelector(`.${menu_collapse_class}`);
+    let menu = e.target.parentNode.querySelector(`.${menu_collapse_class}`);
 
-    submenu.classList.toggle(class_show);
+    menu.classList.toggle(class_show);
 }
